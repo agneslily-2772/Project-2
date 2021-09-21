@@ -1,0 +1,59 @@
+*, *::before, *::after {
+    box-sizing: border-box; 
+  }
+  
+  body {
+    padding: 0;
+    margin: 0;
+  }
+  
+  .wrapper {
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-gap: 10px;
+    background-color: #fff;
+    background-color: #2176D3;
+    color: #444;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    grid-template-columns: repeat(4, 85px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 85px);
+  }
+  
+  .wrapper > button {
+    cursor: pointer;
+    font-size: 2rem;
+    border:solid black;
+    outline: none;
+    background-color: #444;
+    color: white;
+    border-radius: 10px;
+  }
+
+  .wrapper > button:hover {
+    background-color: darkred;
+  }
+  .screen {
+    grid-column: 1 / -1;
+    background-color: #444;
+    border:solid black;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+    border-radius: 10px;
+  }
+  
+  .screen .first-number {
+    color: rgba(255, 255, 255, .75);
+    font-size: 2rem;
+  }
+  
+  .screen .second-number {
+    color: white;
+    font-size: 2.8rem;
+  }
